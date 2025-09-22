@@ -1,8 +1,4 @@
-console.log("Hello World!");
-// const button = document.getElementById('share');
-// button.onmouseover = function(){
-//     console.log("Hello");
-// }
+
 
 // the tooltip pop-up
 const tooltip = document.getElementById("socials-tooltip");
@@ -18,9 +14,7 @@ const shareArrow = document.getElementById("share");
 if (window.matchMedia("(max-width: 900px)").matches) {
     console.log(window.innerWidth);
     shareContainer.addEventListener("click", tooltipShowSmall);
-    // tooltip.addEventListener("mouseenter", tooltipShowSmall);
     shareContainerMobile.addEventListener("click", tooltipHideSmall);
-    // tooltip.addEventListener("mouseleave", tooltipHideSmall);
 
 }
 // for desktop displays
@@ -33,14 +27,12 @@ else {
 
 
 function tooltipShow(){
-    console.log("mouse over");
     tooltip.style.display = 'flex';
     shareContainer.style.backgroundColor = 'var(--Desaturated-Dark-Blue)';
     shareArrow.style.filter = 'brightness(200%)';
 }
 
 function tooltipHide(){
-    console.log("mouse out");
     tooltip.style.display = 'none';
     shareContainer.style.backgroundColor = 'white';
     shareArrow.style.filter = 'brightness(100%)';
@@ -55,11 +47,13 @@ const tooltipSmall = document.getElementById("socials-tooltip-mobile");
 function tooltipShowSmall() {
     author.style.display = "none";
     tooltipSmall.style.display = "flex";
+    author.style.marginTop = "10px";
 }
 
 function tooltipHideSmall() {
     author.style.display = "flex";
     tooltipSmall.style.display = "none";
+    author.style.marginTop = "50px";
 }
 
 // function tooltipShowAnimated(){
