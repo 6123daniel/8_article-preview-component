@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+  <script defer src="./main.js"></script>
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,16 +33,34 @@
       </p>
       
       <div id="author">
-        <img src="./images/avatar-michelle.jpg" alt="profile-picture"/>
+        <img id="profile-pic" src="./images/avatar-michelle.jpg" alt="profile-picture"/>
         <div id="article-info">
           <div id="name">Michelle Appleton</div>
           <div id="date">28 Jun 2020</div>
         </div>
         <div id="socials">
-          <img src="./images/icon-share.svg" alt="share"/>
+          <div id="socials-tooltip">
+            <p id="tooltip-text">SHARE</p>
+            <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"/></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"/></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest"/></a>
+          </div>
+          
+          <div id="share-container">
+            <img src="./images/icon-share.svg" alt="share" id="share"/>
+          </div>
         </div>
       </div>
     </div>
+    <div id="socials-tooltip-mobile">
+        <p id="tooltip-text">SHARE</p>
+        <a href="#" id="facebookMobile"><img src="./images/icon-facebook.svg" alt="Facebook"/></a>
+        <a href="#" id="twitterMobile"><img src="./images/icon-twitter.svg" alt="Twitter"/></a>
+        <a href="#" id="pinterestMobile"><img src="./images/icon-pinterest.svg" alt="Pinterest"/></a>
+        <div id="share-container-mobile">
+          <img src="./images/icon-share.svg" alt="share" id="share"/>
+        </div>
+      </div>
     </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
