@@ -18,7 +18,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 98vh;
-    /* border: red 1px solid; */
 }
 
 main {
@@ -30,7 +29,6 @@ main {
     /* align-items: center; */
     justify-content: center;
     height: auto;
-    /* border: 1px red solid; */
     box-shadow: 1px 1px 50px var(--Grayish-Blue);
     border-radius: 15px;
     font-size: 0.9rem;
@@ -54,13 +52,11 @@ main {
     height:100%;
     min-width: 300px;
     height: auto;
-    /* border: 1px red solid; */
 }
 
 
 
 #section2 {
-    /* border: 1px red solid; */
     padding: 3em;
     min-width: 500px;
     justify-content: space-between;
@@ -74,7 +70,6 @@ h3 {
 #author {
     display: flex;
     flex-direction: row;
-    /* border: red solid 1px; */
     height: 50px;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +77,6 @@ h3 {
 
 #article-info {
     width: 70%;
-    /* border: red solid 1px; */
 }
 
 #author #profile-pic {
@@ -101,7 +95,6 @@ h3 {
 }
 
 #socials {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,10 +130,8 @@ h3 {
     align-items: center;
     top: -80px;
     width: 250px;
-    /* width: 0px; */
     padding: 10px;
     border-radius: 10px;
-    /* border: red 1px solid; */
 }
 
 #socials-tooltip-mobile {
@@ -153,8 +144,6 @@ h3 {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    /* right: -4em; */
-    /* margin: -4em; */
 }
 
 #tooltip-text {
@@ -199,7 +188,6 @@ h3 {
 
     #share-container-mobile, #tooltip-text {
         flex-basis: 30%;
-        /* border: 1px solid red; */
         text-align: center;
     }
 }
